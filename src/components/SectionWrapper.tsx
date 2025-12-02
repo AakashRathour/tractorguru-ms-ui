@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Heading from "@/src/components/ui/Heading";
+import { getImageUrl } from "@/src/components/imagePath";
 
 export interface TabItem {
     id: string;
@@ -112,7 +113,7 @@ export default function SectionWrapper({
                         {viewAll.label || "View All"}
                         {viewAll.icon !== false && (
                             <Image
-                                src="https://tractorguru.in/front/images/brand-icons/view-arrow.svg"
+                                src={getImageUrl("brand-icons/view-arrow.svg")}
                                 alt="arrow"
                                 width={11}
                                 height={15}

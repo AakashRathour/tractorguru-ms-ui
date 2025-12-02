@@ -4,6 +4,8 @@ import CarouselComponent from "@/src/components/carousel";
 import SectionWrapper from "@/src/components/SectionWrapper";
 import Heading from "@/src/components/ui/Heading";
 import ViewAllLink from "@/src/components/ui/ViewAllLink";
+import Button from "@/src/components/ui/Button";
+import { getImageUrl } from "@/src/components/imagePath";
 
 const PreviewComponent = () => {
   // const [activeTab, setActiveTab] = useState("news");
@@ -44,6 +46,72 @@ const PreviewComponent = () => {
       <div className="my-5">
         <div className="container mx-auto px-4">
           <div className="my-5 border border-[#e5e5e5] rounded-lg  p-4">
+            <h1 className="mb-4">Button Component</h1>
+
+            <div className="grid grid-cols-3 gap-4">
+              <div>
+                <h3 className="mb-2 text-sm font-semibold">Fill Button</h3>
+                <Button variant="fill">Click Me</Button>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-sm font-semibold">Border Button</h3>
+                <Button variant="border">Click Me</Button>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-sm font-semibold">Button with Left Image</h3>
+                <Button
+                  variant="fill"
+                  leftImage={getImageUrl("brand-icons/view-arrow.svg")}
+                >
+                  View Details
+                </Button>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-sm font-semibold">Button with Right Image</h3>
+                <Button
+                  variant="border"
+                  rightImage={getImageUrl("brand-icons/view-arrow.svg")}
+                >
+                  Learn More
+                </Button>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-sm font-semibold">Button without Image</h3>
+                <Button variant="fill">Submit</Button>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-sm font-semibold">Button as Link</h3>
+                <Button variant="fill" href="/tractors">
+                  Go to Tractors
+                </Button>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-sm font-semibold">Disabled Button</h3>
+                <Button variant="fill" disabled>
+                  Disabled
+                </Button>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-sm font-semibold">Loading Button</h3>
+                <Button variant="fill" loading>
+                  Loading...
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="my-5">
+        <div className="container mx-auto px-4">
+          <div className="my-5 border border-[#e5e5e5] rounded-lg  p-4">
             <ViewAllLink href="/tractors" label="View all" title="tractor" />
             <ViewAllLink href="/tractors" icon={false} />
               <ViewAllLink href="/news" label="Explore More" icon={false} />
@@ -67,7 +135,7 @@ const PreviewComponent = () => {
                   link: "/new-tractors",
                 },
                 {
-                  img: "https://tractorguru.in/front/images/jk-tyres/JkTyres_Desktop_1920X600_march24.webp",
+                  img: getImageUrl("jk-tyres/JkTyres_Desktop_1920X600_march24.webp"),
                   link: "/jk-tyres",
                 },
                 {

@@ -2,12 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import classNames from "classnames";
 import { ViewAllLinkProps } from "@/src/interfaces/interface";
+import { getImageUrl } from "@/src/components/imagePath";
 
 const ViewAllLink: React.FC<ViewAllLinkProps> = ({
   href,
   title,
   label = "View All",
-  icon = "https://tractorguru.in/front/images/brand-icons/view-arrow.svg",
+  icon = getImageUrl("brand-icons/view-arrow.svg"),
   className,
   iconClassName,
   loading = false,

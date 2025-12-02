@@ -81,3 +81,19 @@ export interface CarouselProps {
   autoPlay?: boolean;
   infiniteLoop?: boolean;
 }
+
+export interface ButtonProps {
+  children: React.ReactNode;
+  variant?: "fill" | "border";
+  onClick?: () => void;
+  href?: string;
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
+  className?: string;
+  leftImage?: string;
+  rightImage?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  imageClassName?: string;
+  loading?: boolean;
+}
