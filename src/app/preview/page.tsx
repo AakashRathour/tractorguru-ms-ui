@@ -3,14 +3,16 @@ import { useState } from "react";
 import CarouselComponent from "@/src/components/carousel";
 import SectionWrapper from "@/src/components/SectionWrapper";
 import Heading from "@/src/components/ui/Heading";
-import ViewAllLink from "@/src/components/ui/ViewAllLink";
+// import ViewAllLink from "@/src/components/ui/ViewAllLink";
 import Button from "@/src/components/ui/Button";
 import Select from "@/src/components/ui/Select";
 import Input from "@/src/components/ui/Input";
 import SecondaryNav from "@/src/components/ui/SecondaryNav";
 import TwoSection from "@/src/components/ui/TwoSection";
 import { getImageUrl } from "@/src/components/imagePath";
-import Head from "next/head";
+import Chips from "@/src/components/chips/page";
+import FaqAccordion from "@/src/components/faq/page";
+// import Head from "next/head";
 
 const PreviewComponent = () => {
   const [active, setActive] = useState("1");
@@ -24,10 +26,15 @@ const PreviewComponent = () => {
   const [number, setNumber] = useState("");
   return (
     <>
-      <div className="mb-5">        
+      <div className="py-[14px]">
         <SecondaryNav
           items={[
-            { id: "1", label: "New Tractors", href: "/new-tractors", active: true },
+            {
+              id: "1",
+              label: "New Tractors",
+              href: "/new-tractors",
+              active: true,
+            },
             { id: "2", label: "Rating & Reviews", href: "/reviews" },
             { id: "3", label: "Find Best Tractors", href: "/find-best" },
             { id: "4", label: "Tractor News & Updates", href: "/news" },
@@ -45,8 +52,6 @@ const PreviewComponent = () => {
 
       <div className="container mx-auto px-4">
         <div className="my-5 border border-[#e5e5e5] rounded-lg  p-4">
-          <h1 className="mb-4">Heading Component</h1>
-
           <Heading tag="h1" size="h1" className="mb-3">
             This is an H1 Heading
           </Heading>
@@ -80,18 +85,26 @@ const PreviewComponent = () => {
 
             <div className="grid grid-cols-3 gap-4">
               <div>
-                <Heading tag="h3" className="mb-3" uppercase={false}> Fill Button</Heading>
+                <Heading tag="h3" className="mb-3" uppercase={false}>
+                  {" "}
+                  Fill Button
+                </Heading>
                 <Button variant="fill">Click Me</Button>
               </div>
 
               <div>
-                <Heading tag="h3" className="mb-3" uppercase={false} > Border Button</Heading>
+                <Heading tag="h3" className="mb-3" uppercase={false}>
+                  {" "}
+                  Border Button
+                </Heading>
 
                 <Button variant="border">Click Me</Button>
               </div>
 
               <div>
-                <Heading tag="h3" className="mb-3" uppercase={false}>Button with Left Image</Heading>
+                <Heading tag="h3" className="mb-3" uppercase={false}>
+                  Button with Left Image
+                </Heading>
                 <Button
                   variant="fill"
                   leftImage={getImageUrl("brand-icons/view-arrow.svg")}
@@ -101,7 +114,9 @@ const PreviewComponent = () => {
               </div>
 
               <div>
-                <Heading tag="h3" className="mb-3" uppercase={false}>Button with Right Image</Heading>
+                <Heading tag="h3" className="mb-3" uppercase={false}>
+                  Button with Right Image
+                </Heading>
                 <Button
                   variant="border"
                   rightImage={getImageUrl("brand-icons/view-arrow.svg")}
@@ -111,33 +126,43 @@ const PreviewComponent = () => {
               </div>
 
               <div>
-                <Heading tag="h3" className="mb-3" uppercase={false}>Button without Image</Heading>
+                <Heading tag="h3" className="mb-3" uppercase={false}>
+                  Button without Image
+                </Heading>
                 <Button variant="fill">Submit</Button>
               </div>
 
               <div>
-                <Heading tag="h3" className="mb-3" uppercase={false}>Button as Link</Heading>
+                <Heading tag="h3" className="mb-3" uppercase={false}>
+                  Button as Link
+                </Heading>
                 <Button variant="border" href="/tractors">
                   Go to Tractors
                 </Button>
               </div>
 
               <div>
-                <Heading tag="h3" className="mb-3" uppercase={false}>Button as Link</Heading>
+                <Heading tag="h3" className="mb-3" uppercase={false}>
+                  Button as Link
+                </Heading>
                 <Button variant="fill" href="/tractors">
                   Go to Tractors
                 </Button>
               </div>
 
               <div>
-                <Heading tag="h3" className="mb-3" uppercase={false}>Disabled Button</Heading>
+                <Heading tag="h3" className="mb-3" uppercase={false}>
+                  Disabled Button
+                </Heading>
                 <Button variant="fill" disabled>
                   Disabled
                 </Button>
               </div>
 
               <div>
-                <Heading tag="h3" className="mb-3" uppercase={false}>Loading Button</Heading>
+                <Heading tag="h3" className="mb-3" uppercase={false}>
+                  Loading Button
+                </Heading>
                 <Button variant="fill" loading>
                   Loading...
                 </Button>
@@ -150,7 +175,9 @@ const PreviewComponent = () => {
       <div className="my-5">
         <div className="container mx-auto px-4">
           <div className="my-5 border border-[#e5e5e5] rounded-lg  p-4">
-            <Heading tag="h2" className="mb-3">Select Component</Heading>
+            <Heading tag="h2" className="mb-3">
+              Select Component
+            </Heading>
 
             <div className="space-y-4">
               <Heading tag="h2">Border Variant</Heading>
@@ -237,7 +264,9 @@ const PreviewComponent = () => {
       <div className="my-5">
         <div className="container mx-auto px-4">
           <div className="my-5 border border-[#e5e5e5] rounded-lg  p-4">
-            <Heading tag="h2" className="mb-3">Input Component</Heading>
+            <Heading tag="h2" className="mb-3">
+              Input Component
+            </Heading>
 
             <div className="space-y-4">
               <Heading tag="h2">Border Variant</Heading>
@@ -359,7 +388,9 @@ const PreviewComponent = () => {
                   link: "/new-tractors",
                 },
                 {
-                  img: getImageUrl("jk-tyres/JkTyres_Desktop_1920X600_march24.webp"),
+                  img: getImageUrl(
+                    "jk-tyres/JkTyres_Desktop_1920X600_march24.webp"
+                  ),
                   link: "/jk-tyres",
                 },
                 {
@@ -371,7 +402,6 @@ const PreviewComponent = () => {
           </div>
         </div>
       </div>
-
 
       <div className="my-5">
         <div className="container mx-auto px-4">
@@ -427,7 +457,12 @@ const PreviewComponent = () => {
               activeTab={tab}
               onTabChange={setTab}
               viewAll={{
-                label: tab === "news" ? "View All News" : tab === "blog" ? "View All Blog" : "View All Video",
+                label:
+                  tab === "news"
+                    ? "View All News"
+                    : tab === "blog"
+                    ? "View All Blog"
+                    : "View All Video",
                 href: `/${tab}`,
               }}
               tabs={[
@@ -454,7 +489,7 @@ const PreviewComponent = () => {
       <div className="my-5">
         <div className="container mx-auto px-4">
           <div className="my-5 border border-[#e5e5e5] rounded-lg p-4">
-            <h1 className="mb-4">Two Section Component</h1>
+            <Heading tag="h2">Two Section Component</Heading>
 
             <TwoSection
               leftContent={
@@ -463,8 +498,8 @@ const PreviewComponent = () => {
                     Left Section (9 columns)
                   </Heading>
                   <p className="text-gray-600">
-                    This is the main content area. It takes 9/12 (75%) width on desktop
-                    and full width on mobile/tablet.
+                    This is the main content area. It takes 9/12 (75%) width on
+                    desktop and full width on mobile/tablet.
                   </p>
                   <div className="mt-4 space-y-2">
                     <p>• Main content goes here</p>
@@ -479,8 +514,8 @@ const PreviewComponent = () => {
                     Right Section (3 columns)
                   </Heading>
                   <p className="text-gray-600">
-                    This is the sidebar area. It takes 3/12 (25%) width on desktop
-                    and full width on mobile/tablet.
+                    This is the sidebar area. It takes 3/12 (25%) width on
+                    desktop and full width on mobile/tablet.
                   </p>
                   <div className="mt-4 space-y-2">
                     <p>• Sidebar widgets</p>
@@ -490,6 +525,109 @@ const PreviewComponent = () => {
                 </div>
               }
             />
+          </div>
+        </div>
+      </div>
+
+      <div className="my-5">
+        <div className="my-5">
+          <div className="container mx-auto px-4">
+            <div className="my-5 border border-[#e5e5e5] rounded-lg  p-4">
+              <SectionWrapper
+                title="Find Best Tractors"
+                tabs={[
+                  {
+                    id: "1",
+                    label: "Tractors By HP",
+                    content: (
+                      <Chips
+                        items={[
+                          { label: "Under 30 HP", href: "#" },
+                          { label: "30 HP - 50 HP", href: "#" },
+                          { label: "50 HP - 70 HP", href: "#" },
+                          { label: "70 HP - 100 HP", href: "#" },
+                          { label: "Above 100 HP", href: "#" },
+                        ]}
+                      />
+                    ),
+                  },
+                  {
+                    id: "2",
+                    label: "Tractors By Price",
+                    content: (
+                      <Chips
+                        items={[
+                          { label: "Under 3 Lakh", href: "#" },
+                          { label: "30 Lakh - 50 Lakh", href: "#" },
+                          { label: "50 Lakh - 70 Lakh", href: "#" },
+                          { label: "70 Lakh - 100 Lakh", href: "#" },
+                          { label: "Above 100 Lakh", href: "#" },
+                        ]}
+                      />
+                    ),
+                  },
+                ]}
+                activeTab={active}
+                onTabChange={setActive}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="my-5">
+        <div className="container mx-auto px-4">
+          <div className="my-5 border border-[#e5e5e5] rounded-lg p-4">
+            <SectionWrapper title="Find Best Tractors">
+              <Chips
+                items={[
+                  { label: "Under 30 HP", href: "tata" },
+                  { label: "30 HP - 50 HP", href: "#" },
+                  { label: "50 HP - 70 HP", href: "#" },
+                  { label: "70 HP - 100 HP", href: "#" },
+                  { label: "Above 100 HP", href: "#" },
+                ]}
+              />
+            </SectionWrapper>
+          </div>
+        </div>
+      </div>
+
+      <div className="my-5">
+        <div className="container mx-auto px-4">
+          <div className="my-5 border border-[#e5e5e5] rounded-lg p-4">
+            <SectionWrapper title="Faqs - About AC Tractors In India">
+              <FaqAccordion
+                items={[
+                  {
+                    question:
+                      "What is the price range for AC tractors available in India?",
+                    answer:
+                      "The price range of AC tractors is between Rs. 10.19L and 25.47L.",
+                  },{
+                    question:
+                      "What is the price range for AC tractors available in India?",
+                    answer:
+                      "The price range of AC tractors is between Rs. 10.19L and 25.47L.",
+                  },{
+                    question:
+                      "What is the price range for AC tractors available in India?",
+                    answer:
+                      "The price range of AC tractors is between Rs. 10.19L and 25.47L.",
+                  },{
+                    question:
+                      "What is the price range for AC tractors available in India?",
+                    answer:
+                      "The price range of AC tractors is between Rs. 10.19L and 25.47L.",
+                  },{
+                    question:
+                      "What is the price range for AC tractors available in India?",
+                    answer:
+                      "The price range of AC tractors is between Rs. 10.19L and 25.47L.",
+                  },
+                ]}
+              />
+            </SectionWrapper>
           </div>
         </div>
       </div>
