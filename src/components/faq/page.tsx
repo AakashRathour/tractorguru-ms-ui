@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Heading from "../ui/Heading";
 import { getImageUrl } from "../imagePath";
 
 interface FaqItem {
@@ -30,13 +29,9 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
           >
             {/* Header */}
             <div className="relative pr-8" onClick={() => toggle(index)}>
-              <Heading
-                tag="h3"
-                className="text-[16px] font-semibold text-[#101828] leading-[28px]"
-                uppercase={false}
-              >
+              <h3 className="text-[16px] font-semibold text-[#101828] leading-[28px]">
                 {faq.question}
-              </Heading>
+              </h3>
 
               {/* Dynamic image using getImageUrl */}
               <span
