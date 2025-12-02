@@ -8,6 +8,7 @@ import Button from "@/src/components/ui/Button";
 import Select from "@/src/components/ui/Select";
 import Input from "@/src/components/ui/Input";
 import SecondaryNav from "@/src/components/ui/SecondaryNav";
+import TwoSection from "@/src/components/ui/TwoSection";
 import { getImageUrl } from "@/src/components/imagePath";
 import Head from "next/head";
 
@@ -446,6 +447,48 @@ const PreviewComponent = () => {
                   content: <p>Video</p>,
                 },
               ]}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="my-5">
+        <div className="container mx-auto px-4">
+          <div className="my-5 border border-[#e5e5e5] rounded-lg p-4">
+            <h1 className="mb-4">Two Section Component</h1>
+
+            <TwoSection
+              leftContent={
+                <div className="bg-blue-50 p-6 rounded-lg">
+                  <Heading tag="h3" className="mb-3" uppercase={false}>
+                    Left Section (9 columns)
+                  </Heading>
+                  <p className="text-gray-600">
+                    This is the main content area. It takes 9/12 (75%) width on desktop
+                    and full width on mobile/tablet.
+                  </p>
+                  <div className="mt-4 space-y-2">
+                    <p>• Main content goes here</p>
+                    <p>• Articles, products, listings</p>
+                    <p>• Primary information</p>
+                  </div>
+                </div>
+              }
+              rightContent={
+                <div className="bg-green-50 p-6 rounded-lg">
+                  <Heading tag="h3" className="mb-3" uppercase={false}>
+                    Right Section (3 columns)
+                  </Heading>
+                  <p className="text-gray-600">
+                    This is the sidebar area. It takes 3/12 (25%) width on desktop
+                    and full width on mobile/tablet.
+                  </p>
+                  <div className="mt-4 space-y-2">
+                    <p>• Sidebar widgets</p>
+                    <p>• Ads</p>
+                    <p>• Related content</p>
+                  </div>
+                </div>
+              }
             />
           </div>
         </div>

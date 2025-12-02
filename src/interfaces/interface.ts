@@ -146,3 +146,11 @@ export interface SecondaryNavProps {
   visibleItemsMobile?: number;
   className?: string;
 }
+
+export interface TwoSectionProps {
+  leftContent: React.ReactNode;
+  rightContent: React.ReactNode;
+  className?: string;
+  leftClassName?: string;
+  rightClassName?: string;
+}
