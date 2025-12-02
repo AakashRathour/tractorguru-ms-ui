@@ -11,7 +11,7 @@ interface FaqAccordionProps {
 }
 
 export default function FaqAccordion({ items }: FaqAccordionProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggle = (idx: number) => {
     setOpenIndex(openIndex === idx ? null : idx);
@@ -25,7 +25,9 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
         return (
           <div
             key={index}
-            className="border-b border-[#e5e5e5] py-3 cursor-pointer"
+            className={`py-3 cursor-pointer ${
+              index !== items.length - 1 ? "border-b border-[#e5e5e5]" : ""
+            }`}
           >
             {/* Header */}
             <div className="relative pr-8" onClick={() => toggle(index)}>
@@ -33,7 +35,7 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
                 {faq.question}
               </h3>
 
-              {/* Dynamic image using getImageUrl */}
+              {/* Plus / Minus Icon */}
               <span
                 className="absolute right-0 top-1/2 -translate-y-1/2 w-5 h-5 bg-no-repeat bg-contain"
                 style={{
