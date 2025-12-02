@@ -97,3 +97,38 @@ export interface ButtonProps {
   imageClassName?: string;
   loading?: boolean;
 }
+
+export interface SelectOption {
+  value: string;
+  label: string;
+  disabled?: boolean;
+}
+
+export interface SelectProps {
+  options: SelectOption[];
+  value?: string;
+  onChange?: (value: string) => void;
+  placeholder?: string;
+  disabled?: boolean;
+  className?: string;
+  label?: string;
+  error?: string;
+  required?: boolean;
+  variant?: "border" | "border-bottom";
+}
+
+export interface InputProps {
+  type?: "text" | "email" | "password" | "number" | "tel" | "url" | "search";
+  value?: string;
+  onChange?: (value: string) => void;
+  placeholder?: string;
+  disabled?: boolean;
+  className?: string;
+  label?: string;
+  error?: string;
+  required?: boolean;
+  variant?: "border" | "border-bottom";
+  leftIcon?: string;
+  rightIcon?: string;
+  name?: string;
+}
