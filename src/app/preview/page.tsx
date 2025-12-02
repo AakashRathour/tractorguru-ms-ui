@@ -7,6 +7,7 @@ import ViewAllLink from "@/src/components/ui/ViewAllLink";
 import Button from "@/src/components/ui/Button";
 import Select from "@/src/components/ui/Select";
 import Input from "@/src/components/ui/Input";
+import SecondaryNav from "@/src/components/ui/SecondaryNav";
 import { getImageUrl } from "@/src/components/imagePath";
 import Head from "next/head";
 
@@ -22,6 +23,25 @@ const PreviewComponent = () => {
   const [number, setNumber] = useState("");
   return (
     <>
+      <div className="mb-5">        
+        <SecondaryNav
+          items={[
+            { id: "1", label: "New Tractors", href: "/new-tractors", active: true },
+            { id: "2", label: "Rating & Reviews", href: "/reviews" },
+            { id: "3", label: "Find Best Tractors", href: "/find-best" },
+            { id: "4", label: "Tractor News & Updates", href: "/news" },
+            { id: "5", label: "About Tractors", href: "/about" },
+            { id: "6", label: "FAQ", href: "/faq" },
+            { id: "7", label: "Similar Brands", href: "/brands" },
+            { id: "8", label: "Compare Tractors", href: "/compare" },
+            { id: "9", label: "Tractor Loan", href: "/loan" },
+            { id: "10", label: "Tractor Insurance", href: "/insurance" },
+          ]}
+          visibleItemsDesktop={4}
+          visibleItemsMobile={3}
+        />
+      </div>
+
       <div className="container mx-auto px-4">
         <div className="my-5 border border-[#e5e5e5] rounded-lg  p-4">
           <h1 className="mb-4">Heading Component</h1>
@@ -60,13 +80,13 @@ const PreviewComponent = () => {
             <div className="grid grid-cols-3 gap-4">
               <div>
                 <Heading tag="h3" className="mb-3" uppercase={false}> Fill Button</Heading>
-                <Button variant="fill" className="w-100">Click Me</Button>
+                <Button variant="fill">Click Me</Button>
               </div>
 
               <div>
                 <Heading tag="h3" className="mb-3" uppercase={false} > Border Button</Heading>
 
-                <Button variant="border" className="w-100">Click Me</Button>
+                <Button variant="border">Click Me</Button>
               </div>
 
               <div>

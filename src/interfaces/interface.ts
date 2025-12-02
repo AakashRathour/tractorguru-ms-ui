@@ -132,3 +132,17 @@ export interface InputProps {
   rightIcon?: string;
   name?: string;
 }
+
+export interface SecondaryNavItem {
+  id: string;
+  label: string;
+  href: string;
+  active?: boolean;
+}
+
+export interface SecondaryNavProps {
+  items: SecondaryNavItem[];
+  visibleItemsDesktop?: number;
+  visibleItemsMobile?: number;
+  className?: string;
+}
