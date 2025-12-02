@@ -1,0 +1,144 @@
+{
+  "desktopOrder": ["new-tractors", "used-tractors", "news-updates", "more"],
+  "mobileOrder": ["new-tractors", "used-tractors", "compare", "news-updates", "more"],
+
+  "icons": {
+    "new-tractors": "https://tractorguru.in/front/images/header-icon/new-tractor-icon.svg",
+    "used-tractors": "https://tractorguru.in/front/images/header-icon/used-tractor-icon.svg",
+    "news-updates": "https://tractorguru.in/front/images/header-icon/news-update-icon.svg",
+    "compare": "https://tractorguru.in/front/images/header-icon/compare-icon.svg",
+    "more": "https://tractorguru.in/front/images/header-icon/more-icon.svg",
+    "home": "https://tractorguru.in/front/images/header-icon/home-icon.svg"
+  },
+
+  "extraItems": {
+    "compare": {
+      "id": "compare",
+      "title": "Compare Tractors",
+      "href": "/compare",
+      "hasDropdown": false,
+      "icon": "compare"
+    }
+  },
+
+  "menuItems": [
+    {
+      "id": "new-tractors",
+      "title": "New Tractors",
+      "href": "/new-tractors",
+      "hasDropdown": true,
+      "hasMegaMenu": true,
+      "megaMenuType": "tractors",
+      "icon": "new-tractors",
+      "categories": [
+        {
+          "title": "",
+          "links": [
+            { "label": "New Tractors", "href": "/new-tractors" },
+            { "label": "Upcoming Tractors", "href": "/new-tractors/upcoming" },
+            { "label": "Mini Tractors", "href": "/new-tractors/mini" },
+            { "label": "AC Tractors", "href": "/new-tractors/ac" },
+            { "label": "Trem IV Tractors", "href": "/new-tractors/trem-iv" },
+            { "label": "Popular Tractors", "href": "/new-tractors/popular" },
+            { "label": "Latest Tractors", "href": "/new-tractors/latest" },
+            { "label": "4WD Tractors", "href": "/new-tractors/4wd" },
+            { "label": "2WD Tractors", "href": "/new-tractors/2wd" },
+            { "label": "Electric Tractors", "href": "/new-tractors/electric" }
+          ]
+        }
+      ],
+      "brands": [
+        { "name": "Mahindra", "logo": "https://tractorguru.in/upload/brand-images/mahindra.webp", "href": "/brands/mahindra" },
+        { "name": "Swaraj", "logo": "https://tractorguru.in/upload/brand-images/swaraj.webp", "href": "/brands/swaraj" },
+        { "name": "Sonalika", "logo": "https://tractorguru.in/upload/brand-images/sonalika.webp", "href": "/brands/sonalika" },
+        { "name": "John Deere", "logo": "https://tractorguru.in/upload/brand-images/john-deere.webp", "href": "/brands/john-deere" },
+        { "name": "New Holland", "logo": "https://tractorguru.in/upload/brand-images/new-holland.webp", "href": "/brands/new-holland" }
+      ]
+    },
+
+    {
+      "id": "used-tractors",
+      "title": "Used Tractors",
+      "href": "/used-tractors",
+      "hasDropdown": true,
+      "hasMegaMenu": true,
+      "megaMenuType": "tractors",
+      "icon": "used-tractors",
+      "categories": [
+        {
+          "title": "",
+          "links": [
+            { "label": "Buy Used Tractors", "href": "/used-tractors" },
+            { "label": "Sell Used Tractors", "href": "/sell-used-tractor" }
+            
+          ]
+        }
+      ],
+      "brands": [
+        { "name": "Mahindra", "logo": "https://tractorguru.in/upload/brand-images/mahindra.webp", "href": "/used-tractors/mahindra" },
+        { "name": "Swaraj", "logo": "https://tractorguru.in/upload/brand-images/swaraj.webp", "href": "/used-tractors/swaraj" },
+        { "name": "Sonalika", "logo": "https://tractorguru.in/upload/brand-images/sonalika.webp", "href": "/used-tractors/sonalika" }
+      ]
+    },
+
+    {
+      "id": "news-updates",
+      "title": "News & Updates",
+      "href": "/news",
+      "hasDropdown": true,
+      "hasMegaMenu": true,
+      "megaMenuType": "news",
+      "icon": "news-updates",
+      "categories": [
+        {
+          "title": "",
+          "links": [
+            { "label": "News", "href": "/news" },
+            { "label": "Blog", "href": "/blog" },
+            { "label": "Tractor Vdeo", "href": "/tractor-video" },
+            { "label": "Web Story", "href": "/web-story" }
+          ]
+        }
+      ],
+      "newsItems": [
+        {
+          "category": "TRACTOR NEWS",
+          "title": "आयशर टॉप 3 ट्रैक्टर : दुलाई और खेती के लिए बेस्ट",
+          "href": "/news/eicher-top-3-tractors"
+        },
+        {
+          "category": "LAUNCH",
+          "title": "Sonalika Presents CNG Tractors at Agrovision",
+          "href": "/news/sonalika-cng-tractors"
+        }
+      ]
+    },
+
+    {
+      "id": "more",
+      "title": "More",
+      "href": "/more",
+      "hasDropdown": true,
+      "hasMegaMenu": true,
+      "megaMenuType": "links",
+      "icon": "more",
+      "categories": [
+        {
+          "title": "",
+          "links": [
+            { "label": "New Tractors", "href": "/new-tractors" },
+            { "label": "Upcoming Tractors", "href": "/new-tractors/upcoming" },
+            { "label": "Mini Tractors", "href": "/new-tractors/mini" },
+            { "label": "AC Tractors", "href": "/new-tractors/ac" },
+            { "label": "Trem IV Tractors", "href": "/new-tractors/trem-iv" },
+            { "label": "Popular Tractors", "href": "/new-tractors/popular" },
+            { "label": "Latest Tractors", "href": "/new-tractors/latest" },
+            { "label": "4WD Tractors", "href": "/new-tractors/4wd" },
+            { "label": "2WD Tractors", "href": "/new-tractors/2wd" },
+            { "label": "Electric Tractors", "href": "/new-tractors/electric" }
+          ]
+        }
+      ]
+    }
+  ]
+}

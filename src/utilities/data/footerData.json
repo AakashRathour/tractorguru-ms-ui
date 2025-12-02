@@ -1,0 +1,79 @@
+{
+  "logo": {
+    "src": "https://tractorguru.in/front/images/footer-img/footer-tg-logo.svg",
+    "alt": "TractorGuru Logo",
+    "width": 199,
+    "height": 31
+  },
+  "socialLinks": [
+    {
+      "name": "Facebook",
+      "href": "https://www.facebook.com/tractorguru.in",
+      "icon": "https://tractorguru.in/front/images/footer-img/footer-facebook.svg"
+    },
+    {
+      "name": "Instagram",
+      "href": "https://www.instagram.com/tractorguru.in",
+      "icon": "https://tractorguru.in/front/images/footer-img/footer-instagram.svg"
+    },
+    {
+      "name": "Twitter",
+      "href": "https://twitter.com/tractorguru_in",
+      "icon": "https://tractorguru.in/front/images/footer-img/footer-twitter.svg"
+    },
+    {
+      "name": "Pinterest",
+      "href": "https://in.pinterest.com/tractorguru/",
+      "icon": "https://tractorguru.in/front/images/footer-img/footer-pinterest.svg"
+    }
+  ],
+  "whatsappChannel": {
+    "href": "https://www.whatsapp.com/channel/0029VanCXJFBlHpYd896HI2k",
+    "icon": "https://tractorguru.in/front/images/footer-img/footer-whatsapp.svg"
+  },
+  "columns": [
+    {
+      "title": "Tractor By Price",
+      "links": [
+        { "label": "Under 3 Lakh", "href": "/tractors-under-3-lakh" },
+        { "label": "Under 5 Lakh", "href": "/tractors-3-5-lakh" },
+        { "label": "Under 7 Lakh", "href": "/tractors-5-7-lakh" },
+        { "label": "Under 10 Lakh", "href": "/tractors-7-10-lakh" },
+        { "label": "Above 10 Lakh", "href": "/tractors-above-10-lakh" }
+      ]
+    },
+    {
+      "title": "Tractor By HP",
+      "links": [
+        { "label": "Under 20 HP", "href": "/tractors-below-20-hp" },
+        { "label": "Under30 HP", "href": "/tractors-21-30-hp" },
+        { "label": "Under 40 HP", "href": "/tractors-31-40-hp" },
+        { "label": "Under 50 HP", "href": "/tractors-41-50-hp" },
+        { "label": "Above 50 HP", "href": "/tractors-above-50-hp" }
+      ]
+    },
+    {
+      "title": "News",
+      "links": [
+        { "label": "Tractor News", "href": "/news/tractor-news" },
+        { "label": "Sarkari Yojana News", "href": "/news/sarkari-yojana-news" },
+        { "label": "Agriculture News", "href": "/news/agriculture-news" },
+        { "label": "Weather News", "href": "/news/weather-news" },
+        { "label": "Agri Business News", "href": "/news/agri-business-news" },
+        { "label": "Social News", "href": "/news/social-news" },
+        { "label": "Success Stories News", "href": "/news/success-stories-news" }        
+      ]
+    },
+    {
+      "title": "Important Links",
+      "links": [
+        { "label": "Buy Used Tractor", "href": "/used-tractors" },
+        { "label": "Sell Your Tractor", "href": "/sell-tractor" },
+        { "label": "Tractor Dealers", "href": "/tractor-dealers" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "About Us", "href": "/about-us" },
+        { "label": "Tractor Loan", "href": "/tractor-loan" }
+      ]
+    }
+  ]
+}
