@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Quick Links",
+    "links": [
+      { "label": "New Tractors", "url": "/new-tractors" },
+      { "label": "Second Hand Tractors", "url": "/second-hand-tractors" },
+      { "label": "Tractor Brands", "url": "/tractor-brands" },
+      { "label": "Mini Tractors", "url": "/mini-tractors" },
+      { "label": "Tractor Tyres", "url": "/tractor-tyres" },
+      { "label": "Compare Tractors", "url": "/compare-tractors" },
+      { "label": "Tractor Dealers", "url": "/tractor-dealers" },
+      { "label": "abcdef Tractor", "url": "/tractor-dealers" },
+      { "label": "Become A Dealer", "url": "/become-a-dealer" },
+      { "label": "Tractor Videos", "url": "/tractor-videos" },
+      { "label": "News", "url": "/news" },
+      { "label": "Blog", "url": "/blog" },
+      { "label": "Web Story", "url": "/web-story" },
+      { "label": "Tractor News", "url": "/tractor-news" },
+      { "label": "Sitemap", "url": "/sitemap" },
+      { "label": "Privacy Policy", "url": "/privacy-policy" }
+    ]
+  },
+  {
+    "title": "Popular Tractor Brands",
+    "links": [
+      { "label": "Mahindra Tractors", "url": "/mahindra-tractors" },
+      { "label": "John Deere Tractors", "url": "/john-deere-tractors" },
+      { "label": "Swaraj Tractors", "url": "/swaraj-tractors" },
+      { "label": "Sonalika Tractors", "url": "/sonalika-tractors" },
+      { "label": "Eicher Tractors", "url": "/eicher-tractors" },
+      { "label": "New Holland Tractors", "url": "/new-holland-tractors" },
+      { "label": "Massey Ferguson Tractors", "url": "/massey-ferguson-tractors" },
+      { "label": "Farmtrac Tractors", "url": "/farmtrac-tractors" }
+    ]
+  },
+  {
+    "title": "Most Searched Tractors",
+    "links": [
+      { "label": "Mahindra 575 DI", "url": "/mahindra-575-di" },
+      { "label": "Swaraj 855 FE", "url": "/swaraj-855-fe" },
+      { "label": "John Deere 5310", "url": "/john-deere-5310" },
+      { "label": "Sonalika DI 745 III", "url": "/sonalika-di-745-iii" },
+      { "label": "Eicher 380", "url": "/eicher-380" },
+      { "label": "New Holland 3630", "url": "/new-holland-3630" },
+      { "label": "Massey Ferguson 241", "url": "/massey-ferguson-241" },
+      { "label": "Farmtrac 60", "url": "/farmtrac-60" }
+    ]
+  }
+  
+]

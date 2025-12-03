@@ -24,7 +24,7 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
       {items.map((faq, index) => {
         const isOpen = openIndexes.includes(index);
 
-        return (
+        return (  
           <div
             key={index}
             className={`py-3 cursor-pointer ${

@@ -12,6 +12,8 @@ import TwoSection from "@/src/components/ui/TwoSection";
 import { getImageUrl } from "@/src/components/imagePath";
 import Chips from "@/src/components/chips/page";
 import FaqAccordion from "@/src/components/faq/page";
+import QuickLinks from "@/src/components/quicklinks/QuickLinks";
+import quickLinksData from "@/src/utilities/data/quickLinksData.json";
 // import Head from "next/head";
 
 const PreviewComponent = () => {
@@ -627,6 +629,16 @@ const PreviewComponent = () => {
                   },
                 ]}
               />
+            </SectionWrapper>
+          </div>
+        </div>
+      </div>
+
+      <div className="my-5">
+        <div className="container mx-auto px-4">
+          <div className="my-5 border border-[#e5e5e5] rounded-lg p-4">
+            <SectionWrapper title="SEARCH OTHER TRACTORS">
+              <QuickLinks sections={quickLinksData} />
             </SectionWrapper>
           </div>
         </div>
