@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Mahindra Arjun 555 DI",
+    "slug": "/mahindra-arjun-555-di",
+    "image": "https://tractorguru.in/upload/tractor-images/mahindra-arjun-555-di.webp",
+    "price": "₹ X,XX,XX",
+    "hp": "49",
+    "brandName": "Mahindra",
+    "modelName": "Arjun 555 DI",
+    "brandId": "60852871bc86ec7717c2b3ac"
+  },
+  {
+    "title": "Mahindra JIVO 245 DI",
+    "slug": "/mahindra-jivo-245-di",
+    "image": "https://tractorguru.in/upload/tractor-images/mahindra-jivo-245-di.webp",
+    "price": "₹ 5.33 - 5.48 Lakh",
+    "hp": "24",
+    "brandName": "Mahindra",
+    "modelName": "JIVO 245 DI",
+    "brandId": "60852871bc86ec7717c2b3ac"
+  },
+  {
+    "title": "Swaraj 855 FE",
+    "slug": "/swaraj-855-fe",
+    "image": "https://tractorguru.in/upload/tractor-images/swaraj-855-fe.webp",
+    "price": "₹ 7.50 - 8.00 Lakh",
+    "hp": "50",
+    "brandName": "Swaraj",
+    "modelName": "855 FE",
+    "brandId": "60852871bc86ec7717c2b3ad"
+  },
+  {
+    "title": "John Deere 5310",
+    "slug": "/john-deere-5310",
+    "image": "https://tractorguru.in/upload/tractor-images/john-deere-5310.webp",
+    "price": "₹ 9.50 - 10.20 Lakh",
+    "hp": "55",
+    "brandName": "John Deere",
+    "modelName": "5310",
+    "brandId": "60852871bc86ec7717c2b3ae"
+  },
+  {
+    "title": "Sonalika DI 745 III",
+    "slug": "/sonalika-di-745-iii",
+    "image": "https://tractorguru.in/upload/tractor-images/sonalika-di-745-iii.webp",
+    "price": "₹ 7.80 - 8.30 Lakh",
+    "hp": "45",
+    "brandName": "Sonalika",
+    "modelName": "DI 745 III",
+    "brandId": "60852871bc86ec7717c2b3af"
+  },
+  {
+    "title": "New Holland 3630",
+    "slug": "/new-holland-3630",
+    "image": "https://tractorguru.in/upload/tractor-images/sonalika-di-745-iii.webp",
+    "price": "₹ 8.20 - 8.80 Lakh",
+    "hp": "55",
+    "brandName": "New Holland",
+    "modelName": "3630",
+    "brandId": "60852871bc86ec7717c2b3b0"
+  }
+]

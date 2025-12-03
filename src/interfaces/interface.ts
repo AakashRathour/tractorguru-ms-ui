@@ -223,3 +223,20 @@ export interface SectionWrapperProps {
   activeTab?: string;
   onTabChange?: (tabId: string) => void;
 }
+
+// ProductCard Interfaces
+export interface ProductCardData {
+  title: string;
+  slug: string;
+  image: string;
+  price: string;
+  hp: string;
+  brandName: string;
+  modelName: string;
+  brandId: string;
+}
+
+export interface ProductCardProps extends ProductCardData {
+  onEmiClick?: (data: { title: string; modelName: string; brandName: string; brandId: string }) => void;
+  onPriceClick?: (data: { title: string; modelName: string; brandName: string; brandId: string }) => void;
+}

@@ -14,8 +14,10 @@ import Chips from "@/src/components/chips/page";
 import FaqAccordion from "@/src/components/faq/page";
 import QuickLinks from "@/src/components/quicklinks/QuickLinks";
 import Breadcrumbs from "@/src/components/Breadcrumbs";
+import ProductCard from "@/src/components/cards/ProductCard";
 import quickLinksData from "@/src/utilities/data/quickLinksData.json";
 import * as breadcrumbsDataImport from "@/src/utilities/data/breadcrumbsData.json";
+import productCardData from "@/src/utilities/data/productCardData.json";
 import { BreadcrumbItem } from "@/src/interfaces/interface";
 // import Head from "next/head";
 
@@ -635,6 +637,25 @@ const PreviewComponent = () => {
                   },
                 ]}
               />
+            </SectionWrapper>
+          </div>
+        </div>
+      </div>
+
+      <div className="my-5">
+        <div className="container mx-auto px-4">
+          <div className="my-5 border border-[#e5e5e5] rounded-lg p-4">
+            <SectionWrapper title="Product Cards">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {productCardData.map((product, index) => (
+                  <ProductCard
+                    key={index}
+                    {...product}
+                    onEmiClick={(data) => console.log("EMI Click:", data)}
+                    onPriceClick={(data) => console.log("Price Click:", data)}
+                  />
+                ))}
+              </div>
             </SectionWrapper>
           </div>
         </div>
