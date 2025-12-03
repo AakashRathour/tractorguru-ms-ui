@@ -66,14 +66,14 @@ export default function SectionWrapper({
             {/* TABS */}
             {tabs && tabs.length > 0 && (
                 <div className="tabsMain-wrp">
-                    <div className="nav navNew-tabs px-3 md:px-4 flex gap-4 border-b-2 border-[#D325251A]">
+                    <div className="nav navNew-tabs px-3 md:px-4 flex gap-[8px] border-b-2 border-[#D325251A]">
                         {tabs.map((tab) => {
                             const isActive = activeTab === tab.id;
                             return (
                                 <button
                                     key={tab.id}
                                     onClick={() => onTabChange?.(tab.id)}
-                                    className={`pb-2 border-b-2 transition-all ${isActive
+                                    className={`pb-2 border-b-2 transition-all px-[6px] pb-[8px] md:px-[12px] md:pb-[12px] ${isActive
                                             ? "text-[#D32525] border-[#D32525]"
                                             : "text-gray-700 border-transparent"
                                         }`}

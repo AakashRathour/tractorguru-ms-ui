@@ -1,0 +1,88 @@
+{
+  "tractorDetail": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Farmtrac Tractors",
+      "href": "/farmtrac-tractors"
+    },
+    {
+      "label": "Farmtrac 60"
+    }
+  ],
+  "tractorBrand": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Tractor Brands",
+      "href": "/tractor-brands"
+    },
+    {
+      "label": "Mahindra Tractors"
+    }
+  ],
+  "news": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "News",
+      "href": "/news"
+    },
+    {
+      "label": "Tractor News",
+      "href": "/news/tractor"
+    },
+    {
+      "label": "Latest Updates"
+    }
+  ],
+  "compare": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Compare Tractors"
+    }
+  ],
+  "dealers": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Tractor Dealers",
+      "href": "/dealers"
+    },
+    {
+      "label": "Delhi",
+      "href": "/dealers/delhi"
+    },
+    {
+      "label": "Noida"
+    }
+  ],
+  "blog": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Farming Tips",
+      "href": "/blog/farming-tips"
+    },
+    {
+      "label": "Best Practices for Tractor Maintenance"
+    }
+  ]
+}
