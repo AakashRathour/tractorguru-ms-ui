@@ -13,8 +13,13 @@ import { getImageUrl } from "@/src/components/imagePath";
 import Chips from "@/src/components/chips/page";
 import FaqAccordion from "@/src/components/faq/page";
 import QuickLinks from "@/src/components/quicklinks/QuickLinks";
+import Breadcrumbs from "@/src/components/Breadcrumbs";
 import quickLinksData from "@/src/utilities/data/quickLinksData.json";
+import * as breadcrumbsDataImport from "@/src/utilities/data/breadcrumbsData.json";
+import { BreadcrumbItem } from "@/src/interfaces/interface";
 // import Head from "next/head";
+
+const breadcrumbsData = breadcrumbsDataImport as Record<string, BreadcrumbItem[]>;
 
 const PreviewComponent = () => {
   const [active, setActive] = useState("1");
@@ -28,6 +33,7 @@ const PreviewComponent = () => {
   const [number, setNumber] = useState("");
   return (
     <>
+
       <div className="py-[14px]">
         <SecondaryNav
           items={[
@@ -463,8 +469,8 @@ const PreviewComponent = () => {
                   tab === "news"
                     ? "View All News"
                     : tab === "blog"
-                    ? "View All Blog"
-                    : "View All Video",
+                      ? "View All Blog"
+                      : "View All Video",
                 href: `/${tab}`,
               }}
               tabs={[
@@ -606,22 +612,22 @@ const PreviewComponent = () => {
                       "What is the price range for AC tractors available in India?",
                     answer:
                       "The price range of AC tractors is between Rs. 10.19L and 25.47L.",
-                  },{
+                  }, {
                     question:
                       "What is the price range for AC tractors available in India?",
                     answer:
                       "The price range of AC tractors is between Rs. 10.19L and 25.47L.",
-                  },{
+                  }, {
                     question:
                       "What is the price range for AC tractors available in India?",
                     answer:
                       "The price range of AC tractors is between Rs. 10.19L and 25.47L.",
-                  },{
+                  }, {
                     question:
                       "What is the price range for AC tractors available in India?",
                     answer:
                       "The price range of AC tractors is between Rs. 10.19L and 25.47L.",
-                  },{
+                  }, {
                     question:
                       "What is the price range for AC tractors available in India?",
                     answer:
@@ -643,6 +649,62 @@ const PreviewComponent = () => {
           </div>
         </div>
       </div>
+
+      <div className="my-5">
+        <div className="container mx-auto px-4">
+          <div className="my-5 border border-[#e5e5e5] rounded-lg p-4">
+            <h2 className="text-lg font-bold mb-4">Breadcrumbs - Tractor Detail</h2>
+            <Breadcrumbs items={breadcrumbsData.tractorDetail} />
+          </div>
+        </div>
+      </div>
+
+      <div className="my-5">
+        <div className="container mx-auto px-4">
+          <div className="my-5 border border-[#e5e5e5] rounded-lg p-4">
+            <h2 className="text-lg font-bold mb-4">Breadcrumbs - Tractor Brand</h2>
+            <Breadcrumbs items={breadcrumbsData.tractorBrand} />
+          </div>
+        </div>
+      </div>
+
+      <div className="my-5">
+        <div className="container mx-auto px-4">
+          <div className="my-5 border border-[#e5e5e5] rounded-lg p-4">
+            <h2 className="text-lg font-bold mb-4">Breadcrumbs - News (4 levels)</h2>
+            <Breadcrumbs items={breadcrumbsData.news} />
+          </div>
+        </div>
+      </div>
+
+      <div className="my-5">
+        <div className="container mx-auto px-4">
+          <div className="my-5 border border-[#e5e5e5] rounded-lg p-4">
+            <h2 className="text-lg font-bold mb-4">Breadcrumbs - Compare</h2>
+            <Breadcrumbs items={breadcrumbsData.compare} />
+          </div>
+        </div>
+      </div>
+
+      <div className="my-5">
+        <div className="container mx-auto px-4">
+          <div className="my-5 border border-[#e5e5e5] rounded-lg p-4">
+            <h2 className="text-lg font-bold mb-4">Breadcrumbs - Dealers</h2>
+            <Breadcrumbs items={breadcrumbsData.dealers} />
+          </div>
+        </div>
+      </div>
+
+      <div className="my-5">
+        <div className="container mx-auto px-4">
+          <div className="my-5 border border-[#e5e5e5] rounded-lg p-4">
+            <h2 className="text-lg font-bold mb-4">Breadcrumbs - Blog</h2>
+            <Breadcrumbs items={breadcrumbsData.blog} />
+          </div>
+        </div>
+      </div>
+
+
     </>
   );
 };

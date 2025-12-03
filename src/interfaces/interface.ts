@@ -154,3 +154,72 @@ export interface TwoSectionProps {
   leftClassName?: string;
   rightClassName?: string;
 }
+
+// Breadcrumbs Interfaces
+export interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
+export interface BreadcrumbsProps {
+  items: BreadcrumbItem[];
+}
+
+// QuickLinks Interfaces
+export interface QuickLinkItem {
+  label: string;
+  url: string;
+}
+
+export interface QuickLinksSection {
+  title: string;
+  links: QuickLinkItem[];
+}
+
+export interface QuickLinksProps {
+  sections: QuickLinksSection[];
+}
+
+// FAQ Interfaces
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+export interface FaqAccordionProps {
+  items: FaqItem[];
+}
+
+// Chips Interfaces
+export interface ChipItem {
+  label: string;
+  href: string;
+}
+
+export interface ChipsProps {
+  items: ChipItem[];
+}
+
+// SectionWrapper Interfaces
+export interface TabItem {
+  id: string;
+  label: string;
+  content: React.ReactNode;
+}
+
+export interface SectionWrapperProps {
+  id?: string;
+  title?: string;
+  children?: React.ReactNode;
+  className?: string;
+  headingTag?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  headingSize?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  viewAll?: {
+    icon?: boolean;
+    label?: string;
+    href?: string;
+  };
+  tabs?: TabItem[];
+  activeTab?: string;
+  onTabChange?: (tabId: string) => void;
+}
