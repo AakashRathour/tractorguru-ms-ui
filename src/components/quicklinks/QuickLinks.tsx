@@ -78,7 +78,7 @@ export default function QuickLinks({ sections }: QuickLinksProps) {
             >
               {/* Accordion Header */}
               <div
-                className="cursor-pointer relative pr-8"
+                className="cursor-pointer relative pr-4"
                 onClick={() => toggleAccordion(index)}
               >
                 <h3 className="text-[16px] font-semibold text-[#101828]">
