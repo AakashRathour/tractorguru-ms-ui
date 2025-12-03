@@ -11,16 +11,18 @@ interface FaqAccordionProps {
 }
 
 export default function FaqAccordion({ items }: FaqAccordionProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndexes, setOpenIndexes] = useState<number[]>([0]);
 
   const toggle = (idx: number) => {
-    setOpenIndex(openIndex === idx ? null : idx);
+    setOpenIndexes((prev) =>
+      prev.includes(idx) ? prev.filter((i) => i !== idx) : [...prev, idx]
+    );
   };
 
   return (
     <div className="faqSecWrapper">
       {items.map((faq, index) => {
-        const isOpen = openIndex === index;
+        const isOpen = openIndexes.includes(index);
 
         return (
           <div
@@ -37,7 +39,7 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
 
               {/* Plus / Minus Icon */}
               <span
-                className="absolute right-0 top-1/2 -translate-y-1/2 w-5 h-5 bg-no-repeat bg-contain"
+                className="absolute right-0 top-1/2 -translate-y-1/2 w-5 h-5 bg-no-repeat bg-contain transition-all duration-300"
                 style={{
                   backgroundImage: `url(${getImageUrl(
                     isOpen
@@ -49,13 +51,15 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
             </div>
 
             {/* Body */}
-            {isOpen && (
-              <div className="mt-2">
-                <p className="text-[14px] font-normal text-[#475467] leading-[22px] m-0">
-                  {faq.answer}
-                </p>
-              </div>
-            )}
+            <div
+              className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                isOpen ? "max-h-96 opacity-100 mt-2" : "max-h-0 opacity-0"
+              }`}
+            >
+              <p className="text-[14px] font-normal text-[#475467] leading-[22px] m-0">
+                {faq.answer}
+              </p>
+            </div>
           </div>
         );
       })}
